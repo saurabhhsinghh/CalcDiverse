@@ -26,6 +26,7 @@ window.addEventListener('scroll', () => {
         link.setAttribute('id', '');
         if (link.getAttribute('href') === `#${currentSection}`) {
             link.setAttribute('id', 'active1');
+            console.log(currentSection);
         }
     });
 });
@@ -331,7 +332,7 @@ if (SpeechRecognition) {
     info.textContent = "Your Browser does not support Speech Recognition";
 }
 
-// Form input validation
+// Validate input for name fields
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
